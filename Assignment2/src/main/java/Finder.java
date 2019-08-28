@@ -1,6 +1,6 @@
 public class Finder {
     public Integer findMax(int[] intArray){
-        if(intArray.length == 0){
+        if(intArray == null || intArray.length == 0){
             return null;
         }
         int max = Integer.MIN_VALUE;
@@ -13,7 +13,7 @@ public class Finder {
     }
 
     public Integer findMin(int[] intArray){
-        if(intArray.length == 0){
+        if(intArray == null || intArray.length == 0){
             return null;
         }
         int min = Integer.MAX_VALUE;
